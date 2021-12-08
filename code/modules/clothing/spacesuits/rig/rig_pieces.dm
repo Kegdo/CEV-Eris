@@ -11,6 +11,7 @@
 	cold_protection =    HEAD|FACE|EYES
 	brightness_on = 4
 	spawn_tags = null
+	style_coverage = COVERS_WHOLE_HEAD
 
 /obj/item/clothing/gloves/rig
 	name = "gauntlets"
@@ -34,6 +35,7 @@
 	icon_base = null
 	spawn_tags = null
 
+
 /obj/item/clothing/suit/space/rig
 	name = "chestpiece"
 
@@ -49,6 +51,7 @@
 	supporting_limbs = list()
 	retract_while_active = FALSE
 	spawn_tags = null
+	style_coverage = COVERS_WHOLE_TORSO_AND_LIMBS
 
 /obj/item/clothing/suit/space/rig/handle_shield(mob/user, damage, atom/damage_source = null, mob/attacker = null, def_zone = null, attack_text = "the attack")
 	if(istype(damage_source, /obj/item/projectile/bullet))
@@ -100,6 +103,7 @@
 	cold_protection =    HEAD|FACE|EYES
 	flags =              THICKMATERIAL|AIRTIGHT|COVER_PREVENT_MANIPULATION
 	spawn_tags = null
+	style_coverage = COVERS_WHOLE_HEAD
 
 /obj/item/clothing/suit/lightrig
 	name = "suit"
@@ -110,6 +114,7 @@
 	flags_inv =          HIDEJUMPSUIT
 	flags =              THICKMATERIAL|COVER_PREVENT_MANIPULATION
 	spawn_tags = null
+	style_coverage = COVERS_WHOLE_TORSO_AND_LIMBS
 
 /obj/item/clothing/shoes/lightrig
 	name = "boots"
